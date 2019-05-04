@@ -1,0 +1,9 @@
+FROM golang:1.12-alpine as builder
+RUN apk add --no-cache ca-certificates git
+ENV PROJECT /github.com/tommy-sho/tekton-sample
+WORKDIR /go/src/$PROJECT
+
+ENV GO111MODULE on
+COPY . .
+RUN go install .
+
