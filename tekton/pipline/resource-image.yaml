@@ -1,0 +1,9 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: tekton-sample-resource-image
+spec:
+  type: image
+  params:
+    - name: url
+      value: gcr.io/${YOUR_PROJECT}}/tekton-test/samle
