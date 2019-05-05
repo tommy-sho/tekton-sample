@@ -1,0 +1,17 @@
+apiVersion: tekton.dev/v1alpha1
+kind: TaskRun
+metadata:
+  name: build-push-run
+spec:
+  taskRef:
+    name: deploy-kubectl
+  trigger:
+    type: manual
+  inputs:
+    resources:
+      - name: app
+        resourceRef:
+          name: tekton-sample-resource-git
+    params:
+      - name: path
+        value: /workspace/app/manifest.yaml

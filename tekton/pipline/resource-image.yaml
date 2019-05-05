@@ -6,4 +6,4 @@ spec:
   type: image
   params:
     - name: url
-      value: gcr.io/${YOUR_PROJECT}}/tekton-test/samle
+      value: gcr.io/my-first-project-236315/tekton-sample-image

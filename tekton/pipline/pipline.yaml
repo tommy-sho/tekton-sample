@@ -9,20 +9,7 @@ spec:
     - name: image
       type: image
   tasks:
-  - name: unit-test
-    taskRef:
-      name: go-test
-    params:
-      - name: pathToDockerFile
-        value: /workspace/app/Dockerfile
-      - name: pathToContext
-        value: /workspace/app
-    resources:
-      inputs:
-      - name: app
-        resource: app
   - name: build-push-image
-    runAfter: [unit-test]
     taskRef:
       name: build-image
     params:
