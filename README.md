@@ -18,12 +18,15 @@ Install Tekton Pipelines by refecenre [here](https://github.com/tektoncd/pipelin
 ## Deploy pipline to your GKE cluster
 
 Apply Resources, Task and Pipeline.
+
 `kubectl apply -f tekton/pipeline`
 
 Start PipelineRun.
+
 `kubectl apply -f tekton/pipeline-run.yaml`
 
 Check tekton-pipelines
+
 `kubectl get tekton-pipelines`
 
 ## Licenss
