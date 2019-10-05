@@ -1,5 +1,5 @@
 
-🚨 This repository is use old version Tekton, please, reference newest version🚨 
+🚨 This repository use old version Tekton, please, reference newest version🚨 
 # Tekton-sample
 By using Tekton, Test, build-image and deploy pod to GKE cluster.
 The Tekton(Tekton Piplines) is project that provides Knatice CI/CD piplines on your k8s cluster.
